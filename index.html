@@ -167,16 +167,15 @@
         @media (max-width: 575.98px) {
             .container2 {
                 position: relative;
-                width: 10px !important;
-                /* margin: 100px auto 0 auto; */
-                margin: 0 !important;
+                width: 120px !important;
+                margin: 0px auto 0 auto !important;
                 perspective: 1000px;
             }
 
             .carousel {
                 position: absolute;
-                width: 100% !important;
-                height: 100% !important;
+                width: 100%;
+                height: 100%;
                 transform-style: preserve-3d;
                 animation: rotate360 60s infinite forwards linear;
             }
@@ -184,14 +183,60 @@
             .image {
                 position: absolute;
                 height: 150px !important;
-                width: 150px !important;
-                top: 0px !important;
-                left: 0px !important;
-                right: 0px !important;
+                width: 100px !important;
+                top: 20px;
+                left: 10px;
+                right: 10px;
                 background-size: cover;
                 /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); */
                 display: flex;
             }
+
+            .image:nth-child(1) {
+                background-image: url(img/foto1.png);
+                transform: rotateY(0deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(2) {
+                background-image: url(img/foto2.png);
+                transform: rotateY(40deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(3) {
+                background-image: url(img/foto7.png);
+                transform: rotateY(80deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(4) {
+                background-image: url(img/foto4.png);
+                transform: rotateY(120deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(5) {
+                background-image: url(img/foto5.png);
+                transform: rotateY(160deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(6) {
+                background-image: url(img/foto6.png);
+                transform: rotateY(180deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(7) {
+                background-image: url(img/foto8.png);
+                transform: rotateY(240deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(8) {
+                background-image: url(img/foto9.png);
+                transform: rotateY(280deg) translateZ(180px) !important;
+            }
+
+            .image:nth-child(9) {
+                background-image: url(img/foto10.png);
+                transform: rotateY(320deg) translateZ(180px) !important;
+            }
+
         }
 
         .container2 {
