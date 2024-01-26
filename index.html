@@ -11,8 +11,9 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -36,6 +37,7 @@
                 <!-- <br> -->
                 <font size="6" color="#A6734E">"Amar no es mirarse el uno al otro; es mirar juntos en la misma dirección"</font>
 
+                <br>
                 <!-- <font size="4">"Amar no es mirarse el uno al otro; es mirar juntos en la misma dirección"</font> -->
                 <audio controls autoplay>
                     <source src="/audio/audioo.mp3" type="audio/mpeg">
@@ -77,7 +79,7 @@
         </div>
     </section>
 
-    <section id="scroll" style="background-image: url('img/rosas.png'); background-repeat: no-repeat;">
+    <section id="scroll">
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6 order-lg-2">
@@ -361,7 +363,31 @@
         <div class="p-5">
             <center>
                 <h2 class="display-4">EL PLAN</h2>
-                <img src="img/plan2.png" width="80%" alt="">
+                <img src="img/plan2.png" class="imagenplan" alt="">
+
+
+                <img src="img/planlargo.png" class="mostrar" alt="">
+                <style>
+                    .imagenplan {
+                        width: 80%;
+                    }
+
+                    .mostrar {
+                        display: none;
+                    }
+
+                    @media (max-width: 575.98px) {
+                        .imagenplan {
+                            visibility: hidden;
+                        }
+
+                        .mostrar {
+                            display: block !important;
+                            width: 110%;
+                        }
+
+                    }
+                </style>
             </center>
         </div>
     </section>
